@@ -1,0 +1,17 @@
+CREATE TABLE ASIAKKAAN_VARAUKSET
+(nimi VARCHAR(30),
+ varausnumero INT NOT NULL);
+ 
+CREATE TABLE VARAUS
+(varausnumero INT NOT NULL,
+ konsertin_esiintyja VARCHAR(30) NOT NULL,
+ pvmaara DATE NOT NULL,
+ paikka INT);
+ 
+ CREATE TABLE KONSERTTI
+(esiintyja VARCHAR(30) NOT NULL,
+ pvmaara DATE NOT NULL,
+ hinta INT,
+ paikkojenMaara INT NOT NULL,
+ konserttisali VARCHAR(30) NOT NULL,
+ istumakonserttiko INT NOT NULL);
